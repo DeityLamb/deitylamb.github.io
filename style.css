@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 22px;
   transition: height .2s, width .2s, font-size .2s;
 }
 
@@ -11,11 +12,14 @@ a {
   color: unset;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   font-family: 'Inter', sans-serif;
   color: #f0f0f0;
   text-align: center;
@@ -28,7 +32,6 @@ h1 {
 }
 
 h2 {
-  font-size: 22px;
   font-weight: 500;
 }
 
@@ -47,15 +50,12 @@ body::before {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: linear-gradient(
-    rgba(18, 16, 16, 0) 65%,
-    rgba(0, 0, 0, 0.25) 65%),
-    linear-gradient(
-      90deg,
+  background: linear-gradient(rgba(18, 16, 16, 0) 65%,
+      rgba(0, 0, 0, 0.25) 65%),
+    linear-gradient(90deg,
       rgba(255, 0, 0, 0.06),
       rgba(0, 255, 0, 0.02),
-      rgba(0, 0, 255, 0.06)
-  );
+      rgba(0, 0, 255, 0.06));
   z-index: 10;
   background-size: 100% 12px, 10px 100%;
   pointer-events: none;
@@ -83,8 +83,8 @@ body::before {
 }
 
 .logo {
-  height: 46px;
-  width: 46px;
+  height: 50px;
+  width: 50px;
 }
 
 .link:hover {
@@ -101,7 +101,8 @@ body::before {
     font-size: 20px;
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     margin: 4px;
   }
 
@@ -112,10 +113,5 @@ body::before {
   .link {
     height: 64px;
     width: 64px;
-  }
-
-  .logo {
-    height: 42px;
-    width: 42px;
   }
 }
