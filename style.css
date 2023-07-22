@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: height .2s, width .2s, font-size .2s;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, p {
+  font-family: 'Inter', sans-serif;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 68px;
+  font-weight: 900;
+  text-align: center;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body::before {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 65%,
+    rgba(0, 0, 0, 0.25) 65%),
+    linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.06),
+      rgba(0, 255, 0, 0.02),
+      rgba(0, 0, 255, 0.06)
+  );
+  z-index: 10;
+  background-size: 100% 12px, 10px 100%;
+  pointer-events: none;
+}
+
+.links {
+  margin-top: 80px;
+  width: 400px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.link {
+  height: 68px;
+  width: 68px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  margin-bottom: 10px;
+  border-radius: 100%;
+  color: #fff;
+  /*box-shadow: 0 0 4px #445, 0 0 4px #445;*/
+  transition: box-shadow 0.3s;
+}
+
+.logo {
+  height: 46px;
+  width: 46px;
+}
+
+.link:hover {
+  box-shadow: 0 0 32px #445, 0 0 32px #445;
+  transform: translateY(0) rotate(0deg);
+}
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h1, h2 {
+    margin: 4px;
+  }
+
+  .links {
+    width: 340px;
+  }
+
+  .link {
+    height: 64px;
+    width: 64px;
+  }
+
+  .logo {
+    height: 42px;
+    width: 42px;
+  }
+}

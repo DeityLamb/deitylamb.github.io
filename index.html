@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
   <meta charset="UTF-8">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Alexey">
-  <meta property="og:description" content="
-    WEB developer.
-    No god, no deity, no human.
-  ">
+  <meta property="type" content="website">
+  <meta property="title" content="Backend Software Engineer">
+  <meta property="description" content="No god, no deity, no human.">
+  <meta property="og:image"
+    content="https://media.discordapp.net/attachments/1075702378235449398/1131684160306679970/tmpf6x_oqh3.png">
   <meta name="twitter:card" content="summary">
   <meta name="viewport" content="width=device-width">
   <meta name='freelancehunt' content='83f143d42a524ef' />
-  <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/links.css">
+  <link rel="stylesheet" href="./style.css">
   <title>Alexey</title>
 </head>
+
 <body>
-  <canvas id="background" style="position: absolute; background: #0f0f0f; width: 100%; height: 100%;"></canvas>
-  <main>
+  <canvas id="cube" style="display: block; position: absolute; background: #0f0f0f;"></canvas>
+  <main style="z-index: 20;">
     <div>
       <h1>
         Alexey Rakityansky
@@ -31,27 +31,28 @@
         from Kyiv
       </h2>
     </div>
-    
+
     <div class='links'>
-      <a class="link" id="tw" href="https://twitter.com/deitylamb">
-        <img src="assets/logo/twitter.svg" class="logo" alt="twitter logo">
-      </a>
-
       <a class="link" id="tg" href="https://t.me/deitylamb">
-        <img src="assets/logo/telegram.svg" class="logo" alt="telegram logo">
+        <img src="assets/telegram.svg" class="logo" alt="telegram logo">
       </a>
 
-      <a class="link" id="ds" href="https://discord.gg/Cymesy6cFD">
-        <img src="assets/logo/discord.svg" class="logo" alt="discord logo">
+      <a class="link" id="tw" href="https://twitter.com/deitylamb">
+        <img src="assets/twitter.svg" class="logo" alt="twitter logo">
       </a>
 
       <a class="link" id="gh" href="https://github.com/deitylamb">
-        <img src="assets/logo/github.svg" class="logo" alt="github logo">
+        <img src="assets/github.svg" class="logo" alt="github logo">
+      </a>
+
+      <a class="link" id="ds" href="https://discord.gg/Cymesy6cFD">
+        <img src="assets/discord.svg" class="logo" alt="discord logo">
       </a>
     </div>
   </main>
-  <script type="module" src="js/main.js"></script>
-  <script type="module" src="js/constants.js"></script>
-  <script type="module" src="js/background.js"></script>
+  <script type="module" src="main.js"></script>
+  <script type="module" src="gradient.js"></script>
+  <script type="module" src="cube.js"></script>
 </body>
+
 </html>
