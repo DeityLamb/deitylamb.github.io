@@ -61,14 +61,17 @@ body::before {
   pointer-events: none;
 }
 
-.links {
+.social-buttons {
   margin-top: 80px;
   width: 400px;
   display: inline-flex;
   justify-content: space-between;
 }
+.link:hover {
+  text-decoration: underline;
+}
 
-.link {
+.social-button {
   height: 68px;
   width: 68px;
   display: inline-flex;
@@ -78,7 +81,6 @@ body::before {
   margin-bottom: 10px;
   border-radius: 100%;
   color: #fff;
-  /*box-shadow: 0 0 4px #445, 0 0 4px #445;*/
   transition: box-shadow 0.3s;
 }
 
@@ -87,7 +89,7 @@ body::before {
   width: 50px;
 }
 
-.link:hover {
+.social-button:hover {
   box-shadow: 0 0 32px #445, 0 0 32px #445;
   transform: translateY(0) rotate(0deg);
 }
@@ -106,11 +108,11 @@ body::before {
     margin: 4px;
   }
 
-  .links {
+  .social-buttons {
     width: 340px;
   }
 
-  .link {
+  .social-button {
     height: 64px;
     width: 64px;
   }
