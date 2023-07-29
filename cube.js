@@ -69,8 +69,9 @@ export class StaticTesseract extends Cube {
     super(size);
     const nodes = TESSERACT_NODES
       .map((arr) => arr.map(v => v / 3))
-      .map(([x, y, z]) => [x * size, y * size, z * size])
-    this.nodes.push(...nodes)
+      .map(([x, y, z]) => [x * size, y * size, z * size]);
+    
+    this.nodes.push(...nodes);
 
     this.edges.push(...TESSERACT_EDGES);
 

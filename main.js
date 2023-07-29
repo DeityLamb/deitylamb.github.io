@@ -16,15 +16,9 @@ tesseract.rotate(...BASE_ANGLE)
 const rotate = createRandomRotator(tesseract);
 
 function loop() {
-
   draw(tesseract);
   rotate();
   requestAnimationFrame(loop);
-}
-
-function resize() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
 }
 
 resize()
@@ -32,6 +26,11 @@ window.addEventListener('resize', resize, false);
 requestAnimationFrame(loop);
 
 const gradient = new Gradient('#7665ff', '#ff6565', PULSE / 2);
+
+function resize() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
 
 function draw(projection) {
   ctx.save();
